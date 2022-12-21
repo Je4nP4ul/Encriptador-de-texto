@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de texto</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/Logo.png" alt="logo" id="logo">
+    </header>
+
+    <main>
+        <textarea id="entrada-texto" placeholder="Ingrese el texto aquí" rows="9" cols="60"></textarea>
+
+        <p class="aviso"><img src="img/Vector.png" alt="ícono" id="vector"> Solo letras minúsculas y sin acentos</p>
+
+        <button id="bEncriptar" class="botones">Encriptar</button>
+        <button id="bDesencriptar" class="botones">Desencriptar</button>
+
+        <div id="salida">
+            <div id="ocultar">
+                <img src="img/Muñeco.png" alt="muñeco">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+    
+            <div id="mostrar">
+                <textarea id="salida-texto" readonly rows="20"></textarea>
+                <button id="bCopiar">Copiar</button>
+            </div>
+        </div>
+        
+    
+        <script src="script.js"></script>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Jean Paul Guerra Díaz</p>
+    </footer>
+</body>
+</html>
